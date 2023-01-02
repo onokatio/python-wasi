@@ -9,7 +9,7 @@ PROJECT_DIR=$(pwd)
 INSTALL_PREFIX=$(pwd)/opt
 
 if [[ ! -d "${PYTHON_DIR}" ]]; then
-    git clone https://github.com/python/cpython.git
+    git clone https://github.com/python/cpython.git -b v3.11.1
     PYTHON_DIR=cpython
 fi
 
